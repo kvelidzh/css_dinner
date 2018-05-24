@@ -1,0 +1,104 @@
+* {
+	margin: 0; /* что бы не было отступов от рамки */
+	box-sizing: border-box; /* убирается полоса прокрутки */
+	transition: all .1s ease-in;
+}
+
+html {
+	font-size: 10px; /* основной размер шрифта */
+	height: 100%; /* укразываем чтобы рамка была по размеру экрана */
+	
+	
+}
+
+body {
+	/* margin: 0 auto; */
+	border: 20px solid #2b81ac; /* рамка вокруг боди */
+	background-color: #3399cc; /* задний цвет */
+	min-height: 100%;
+	font: 13px “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	color: #ffffff; /* цвет шрифта для всего */
+} 
+
+.border {
+	margin: auto;
+	width:80%;
+}
+li {
+	padding: 30px 10px; /* размер ячеек */
+	border: 2px solid #fff; /* типо рамка вокруг ячеек */
+	font-size: 16px; /* размер для шрифта в ячейках */
+	}
+li + p { /* не работает */
+	opacity: 0.1;
+}
+
+ul:hover > li { 
+	opacity: 0.7;
+	} /* если я наведу на любую ячейку, то все что все светлеет на значение, которое указано в скобках */
+ul li:hover { 
+	opacity: 1;
+	} /* при наведении на ячейку она не светлеет на то значение которое указано в скобках, чем меньше число, тем светлее подсвечивание */
+
+
+.weather-list {
+	text-align: center;
+	margin:5em 10em;
+	list-style-type: none; /* убирает кружки */
+	background-color: #ffffff;
+	font-size: 0;
+	padding: 0;
+	
+} 
+.weather-list li {
+	display: inline-block;
+	font: 13px “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	
+}
+.weather-list li.size_small {
+	width: 25%;
+}
+.weather-list li.size_medium {
+	width: 50%;
+}
+.weather-list li.size_big{
+	width: 100%;
+}
+
+.weather-list li:nth-child(11n+1) {
+	background-color: #3399cc;
+}
+
+.weather-list li:nth-child(11n+2) {
+	background-color: #33cccc;
+}
+.weather-list li:nth-child(11n+3) {
+	background-color: #996699;
+}
+
+.weather-list li:nth-child(11n+4) {
+	background-color: #c24747;
+}
+.weather-list li:nth-child(11n+5) {
+	background-color: #e2674a;
+}
+.weather-list li:nth-child(11n+6) {
+	background-color: #ffcc66;
+}
+.weather-list li:nth-child(11n+7) {
+	background-color: #99cc99;
+}
+.weather-list li:nth-child(11n+8) {
+	background-color: #669999;
+}
+.weather-list li:nth-child(11n+9) {
+	background-color: #cc6699;
+}
+.weather-list li:nth-child(11n+10) {
+	background-color: #339966;
+}
+.weather-list li:nth-child(11n) {
+	background-color: #666699;
+}
+
+
